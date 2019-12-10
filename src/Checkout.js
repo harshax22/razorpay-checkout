@@ -32,24 +32,19 @@ export default class Checkout extends Component {
     openCheckout() {
         let options = {
             key: this.state.key,
-            name: "Test",
-            amount: (this.state.amount*100),
+            amount: (this.state.amount * 100),
             currency: this.state.currency,
             handler: (response) =>  {
                     alert(response.razorpay_payment_id)
            },
-            description: "RZP Des",
+            description: 'Razorpay Test Description',
             prefill: {
-                 contact: '+917019284852',
-                 email: 'harshamarri18@gmail.com'
-                 
+                 contact: '+919999999999',
+                 email: 'test@test.com'   
             },
             notes: {
-               address : "hello world"
-            },
-            theme: {
-               image_frame: false
-               }
+               address : 'hello world'
+            }
         };
         let rzp = new window.Razorpay(options);
         rzp.open();
