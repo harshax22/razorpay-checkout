@@ -1,0 +1,80 @@
+@import  url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+body {
+    display: block;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background: #01416e;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: default;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color:black;
+    border: none;
+}
+
+input::placeholder {
+    color: #3299CC;
+    font-size: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.enter-amount {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin-left: 15rem;
+    display: block;
+}
+
+.header {
+    background-color: #00b2d6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header__title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+.header__subtitle {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    margin: 0;
+}
+.big-button {
+    width: 70%;
+    border: none;
+    font-weight: bold;
+    background-color: #007cba;
+    color: white;
+    font-size: 100%;
+    border-bottom: 2rem solid darken(blue, 10%);
+    margin: auto;
+    padding: 20px 20px;
+    
+}
+
+.big-button:disabled{
+    opacity: .5;
+}
