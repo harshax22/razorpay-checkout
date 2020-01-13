@@ -44,6 +44,7 @@ function Display(props) {
 					</button>
 				</form>
 			</div>
+			<h1>A new change!</h1>
 		</div>
 	);
 }
