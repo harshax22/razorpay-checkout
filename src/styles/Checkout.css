@@ -40,8 +40,9 @@ input {
 	width: 70%;
 	padding: 1.5rem;
 	color: white;
+	font-size: medium;
 	border: none;
-	border-bottom: .6rem solid darken(#145374, 10%);
+	border-bottom: 5px solid #222831;
 }
 
 .big-button:disabled {
