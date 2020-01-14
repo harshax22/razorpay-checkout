@@ -31,7 +31,7 @@ export default class Checkout extends React.Component {
 	openCheckout() {
 		let options = {
 			key: this.state.key,
-			name: 'Test',
+			name: 'Test Transaction',
 			amount: this.state.amount * 100,
 			currency: this.state.currency,
 			handler: (response) => {
@@ -39,7 +39,7 @@ export default class Checkout extends React.Component {
 					razorpay_payment_id: response.razorpay_payment_id
 				}));
 			},
-			description: 'RZP Des',
+			description: 'Description of the Product',
 			prefill: {
 				contact: '+917019284852',
 				email: 'harshamarri18@gmail.com'
@@ -66,21 +66,21 @@ export default class Checkout extends React.Component {
 				<div className="container">
 					<form onSubmit={this.handleSubmit}>
 						<input
-							className="enter-amount"
+							className="enter-details"
 							type="text"
 							name="currency"
 							onChange={this.changePaymentDetails}
 							placeholder="Currency"
 						/>
 						<input
-							className="enter-amount"
+							className="enter-details"
 							type="text"
 							name="key"
 							onChange={this.changePaymentDetails}
 							placeholder="API Key"
 						/>
 						<input
-							className="enter-amount"
+							className="enter-details"
 							type="number"
 							name="amount"
 							value={this.state.amount}
