@@ -6,7 +6,7 @@ This repository provides a demonstration of Razorpay Standard Checkout and proce
 
 ### Usage
 
-This project is deployed live at https://priceless-carson-28aeea.netlify.com/ and it asks for 3 parameters to open the checkout - currency, API Key and the amount. 
+This project is deployed live at https://razorpay-checkout-22.herokuapp.com/ and it asks for 3 parameters to open the checkout - currency, API Key and the amount. 
 Please pass these values to the input fields and click on the button to open the checkout.
  
 Currency - USD
