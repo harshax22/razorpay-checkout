@@ -40,10 +40,6 @@ export default class Checkout extends React.Component {
 				}));
 			},
 			description: 'Description of the Product',
-			prefill: {
-				contact: '+917019284852',
-				email: 'harshamarri18@gmail.com'
-			},
 			notes: {
 				address: 'hello world'
 			},
