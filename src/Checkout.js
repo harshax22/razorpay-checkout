@@ -34,11 +34,7 @@ export default class Checkout extends React.Component {
 			name: 'Test Transaction',
 			amount: this.state.amount * 100,
 			currency: this.state.currency,
-			handler: (response) => {
-				this.setState(() => ({
-					razorpay_payment_id: response.razorpay_payment_id
-				}));
-			},
+			callback_url: 'https://enygu2lvbjnh.x.pipedream.net/',
 			description: 'Description of the Product',
 			notes: {
 				address: 'hello world'
